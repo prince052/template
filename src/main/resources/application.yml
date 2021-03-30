@@ -28,3 +28,17 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+
+path:
+  includes:
+    - /**
+  excludes:
+    #swagger start
+    - /swagger-resources/**
+    - /webjars/**
+    - /swagger-ui.html/**
+    - /doc.html
+    - /favicon.ico
+    - /service-worker.js
+    - /precache-manifest**
+    #swagger end
